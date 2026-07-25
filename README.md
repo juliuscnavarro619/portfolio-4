@@ -1,21 +1,11 @@
-# JC Navarro — Strategic Marketing Operations Website
+# JC Navarro Strategic Marketing Website — Housecall Pro Content Update
 
-This package is a drop-in evolution of the existing JC Navarro site.
+This build preserves the original site structure and exact visual system from the supplied `index(6).html` and `styles(3).css`.
 
-## Replace
-- index.html
-- styles.css
-- script.js
-- JC_Navarro_Resume.pdf
+Changes are content-only plus the minimum CSS needed to display Housecall Pro videos and campaign artwork.
 
-## Preserve
-Keep the existing `assets/` directory in the same folder. The homepage continues to use `assets/hero-signature.webp`.
+Before publishing, add:
+- `assets/hero-signature.webp`
+- `JC_Navarro_Resume.pdf`
 
-The page includes a built-in visual fallback, so it still renders if that image is unavailable.
-
-## Preview locally
-Open `index.html` directly, or run:
-
-python3 -m http.server 8000
-
-Then visit http://localhost:8000
+Open `index.html` to preview.
