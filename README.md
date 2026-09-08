@@ -1,11 +1,7 @@
-# JC Navarro Strategic Marketing Website — Housecall Pro Content Update
+# JC Navarro — Portfolio
 
-This build preserves the original site structure and exact visual system from the supplied `index(6).html` and `styles(3).css`.
+Static portfolio for jcnavarro.net, deployed through the existing Vercel GitHub integration.
 
-Changes are content-only plus the minimum CSS needed to display Housecall Pro videos and campaign artwork.
+Serve the repository root; no install or build command is required. index.html contains the current page and styling. assets/ contains photos and existing brand assets. JC_Navarro_Resume.pdf is the current downloadable resume.
 
-Before publishing, add:
-- `assets/hero-signature.webp`
-- `JC_Navarro_Resume.pdf`
-
-Open `index.html` to preview.
+Updated with the approved interview-based portfolio and personal imagery. Photo sources: https://jcnavarrofilms.com/.
