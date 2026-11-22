@@ -163,6 +163,17 @@
     .about-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; padding-top: 23px; border-top: 1px solid var(--ink); }
     .about-facts small { display: block; margin-bottom: 7px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
     .about-facts span { font-size: 13px; font-weight: 600; line-height: 1.4; }
+    .life-strip { margin-top: clamp(72px, 9vw, 120px); padding-top: 28px; border-top: 1px solid var(--ink); }
+    .life-strip-head { display: grid; grid-template-columns: .65fr 1.35fr; gap: 72px; align-items: end; margin-bottom: 34px; }
+    .life-strip-head p { max-width: 720px; margin: 0; font: 400 clamp(28px, 3.2vw, 43px)/1.08 "Instrument Serif", serif; letter-spacing: -.02em; }
+    .life-gallery { display: grid; grid-template-columns: 1.3fr .7fr; gap: 18px; }
+    .life-card { margin: 0; }
+    .life-card img { width: 100%; height: 500px; object-fit: cover; }
+    .life-card-wide img { object-position: 68% center; }
+    .life-card figcaption { display: grid; grid-template-columns: minmax(170px, .72fr) minmax(0, 1.28fr); gap: 22px; align-items: baseline; padding: 18px 0 22px; border-bottom: 1px solid var(--line); }
+    .life-card figcaption strong { font: 400 24px/1.08 "Instrument Serif", serif; }
+    .life-card figcaption span { color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .life-card-haircut figcaption { grid-template-columns: 1fr; gap: 6px; }
     .closing { background: var(--accent); }
     .closing-grid { display: grid; grid-template-columns: .7fr 1.3fr; gap: 72px; align-items: start; }
     .closing h2 { max-width: 850px; }
@@ -227,6 +238,12 @@
       .about { grid-template-columns: 1fr; }
       .about figure img { max-height: 540px; object-position: center 26%; }
       .about-facts { grid-template-columns: 1fr; }
+      .life-strip-head, .life-gallery { grid-template-columns: 1fr; }
+      .life-strip-head { gap: 12px; }
+      .life-gallery { gap: 28px; }
+      .life-card img { height: auto; aspect-ratio: 4 / 3; }
+      .life-card-haircut img { aspect-ratio: 4 / 5; }
+      .life-card figcaption { grid-template-columns: 1fr; gap: 6px; }
       footer .shell { padding-block: 24px; flex-direction: column; align-items: flex-start; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
@@ -296,7 +313,16 @@
       </div>
     </section>
     <section class="leadership" id="leadership"><div class="leadership-image shell"><img src="assets/jc-navarro-conversation.webp" alt="JC Navarro and a guest sharing a laugh during a recorded conversation" width="2500" height="1406" loading="lazy"><div class="quote-panel"><div class="eyebrow">Leadership in practice</div><blockquote>“JC sat at the intersection of creative and performance, and he made both better. He turns messy, ambiguous asks into clear problem statements and a plan everyone can execute against.”</blockquote><div class="quote-person"><strong>Christopher Root</strong><span>Senior Performance Marketing Manager · Housecall Pro</span></div></div></div></section>
-    <section class="section shell" id="about"><div class="about"><figure><img src="assets/jc-coaching.webp" alt="JC coaching a youth basketball team during a game" width="1119" height="1492" loading="lazy"></figure><div class="about-copy"><div class="eyebrow">About JC</div><h2>Both sides of the brain are part of the job.</h2><p>My career has moved through government technology, ministry, entrepreneurship, creative leadership, operations, customer marketing, and AI-assisted product building. The titles changed. The throughline did not: listen closely, make complex ideas clear, and build something that helps people move forward.</p><p>I am at my best when a problem needs customer empathy and analysis, creative direction and systems thinking, leadership and hands-on building. That range is not a collection of unrelated skills. It is how I solve problems end to end.</p><p>Outside work, I coach youth basketball, spend time with my wife and three kids, and serve in my local community.</p><div class="about-facts"><div><small>Current</small><span>Senior Manager, Customer Marketing · Integrated Marketing</span></div><div><small>Strength</small><span>Insight → working solution → scalable system</span></div><div><small>Based</small><span>San Diego, California</span></div></div></div></div></section>
+    <section class="section shell" id="about">
+      <div class="about"><figure><img src="assets/jc-coaching.webp" alt="JC coaching a youth basketball team during a game" width="1119" height="1492" loading="lazy"></figure><div class="about-copy"><div class="eyebrow">About JC</div><h2>Both sides of the brain are part of the job.</h2><p>My career has moved through government technology, ministry, entrepreneurship, creative leadership, operations, customer marketing, and AI-assisted product building. The titles changed. The throughline did not: listen closely, make complex ideas clear, and build something that helps people move forward.</p><p>I am at my best when a problem needs customer empathy and analysis, creative direction and systems thinking, leadership and hands-on building. That range is not a collection of unrelated skills. It is how I solve problems end to end.</p><p>Outside work, I coach youth basketball, spend time with my wife and three kids, and serve in my local community.</p><div class="about-facts"><div><small>Current</small><span>Senior Manager, Customer Marketing · Integrated Marketing</span></div><div><small>Strength</small><span>Insight → working solution → scalable system</span></div><div><small>Based</small><span>San Diego, California</span></div></div></div></div>
+      <div class="life-strip">
+        <div class="life-strip-head"><div class="eyebrow">Beyond the résumé</div><p>Leadership and craft are not separate from the work. They are where the habits get practiced.</p></div>
+        <div class="life-gallery">
+          <figure class="life-card life-card-wide"><img src="assets/jc-aliyah-basketball.webp" alt="JC Navarro standing beside a youth basketball player after a team portrait" width="1800" height="1201" loading="lazy"><figcaption><strong>Coach, mentor, dad.</strong><span>Leadership begins with presence, patience, and helping someone see what they can become.</span></figcaption></figure>
+          <figure class="life-card life-card-haircut"><img src="assets/jc-cutting-hair.webp" alt="JC Navarro carefully cutting a man's hair" width="640" height="853" loading="lazy"><figcaption><strong>Craft is service.</strong><span>Pay attention, work with care, and leave someone better than you found them.</span></figcaption></figure>
+        </div>
+      </div>
+    </section>
     <section class="section closing" id="contact"><div class="closing-grid shell"><div class="eyebrow">The next chapter</div><div><h2>Build what customers need—and what teams can actually use.</h2><p class="closing-copy">I’m interested in customer-led marketing innovation, AI transformation, marketing technology, and integrated leadership roles where insight, product thinking, systems, and people all matter.</p><div class="hero-actions"><a class="button primary" href="mailto:julius.c.navarro@gmail.com">Email JC</a><a class="button" href="https://www.linkedin.com/in/navarrojc/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="button" href="JC_Navarro_Resume.pdf" download>Download résumé</a></div></div></div></section>
   </main>
   <footer><div class="shell"><span>© 2026 JC Navarro · San Diego</span><span><a href="mailto:julius.c.navarro@gmail.com">julius.c.navarro@gmail.com</a></span></div></footer>
