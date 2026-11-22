@@ -3,15 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="JC Navarro is a customer marketing and AI innovation leader who turns customer insight into programs, product concepts, internal tools, and scalable operating systems.">
+  <meta name="description" content="JC Navarro is a customer marketing and AI innovation leader who turns customer insight into programs, products, internal tools, and scalable operating systems.">
   <title>JC Navarro — Customer Marketing and AI Innovation</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
   <link rel="canonical" href="https://jcnavarro.net/">
   <link rel="icon" href="assets/favicon.ico">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <meta property="og:image" content="assets/hero-signature.webp">
+  <meta property="og:image" content="assets/jc-navarro-portrait.webp">
   <meta property="og:title" content="JC Navarro — Customer Marketing and AI Innovation">
   <meta property="og:description" content="Customer insight, AI-assisted product building, creative systems, and team leadership.">
   <meta name="twitter:card" content="summary_large_image">
@@ -28,201 +28,207 @@
   </script>
   <style>
     :root {
-      --ink: #15171a;
-      --paper: #ece9e2;
-      --panel: #faf8f3;
-      --muted: #666963;
-      --orange: #ef6a3a;
-      --lime: #d8f65a;
-      --gold: #c8944f;
-      --line: rgba(21, 23, 26, .16);
-      --dark-line: rgba(255,255,255,.14);
-      --max: 1160px;
+      --ink: #171816;
+      --paper: #f3f0e9;
+      --white: #fbfaf7;
+      --muted: #67665f;
+      --accent: #e45c36;
+      --accent-dark: #a43820;
+      --sage: #bac7b5;
+      --line: rgba(23, 24, 22, .19);
+      --max: 1240px;
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.65 "DM Sans", sans-serif; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.62 "DM Sans", sans-serif; }
     a { color: inherit; }
-    img { max-width: 100%; }
-    .shell { width: min(calc(100% - 40px), var(--max)); margin-inline: auto; }
-    .skip { position: absolute; left: 18px; top: -80px; z-index: 50; background: white; padding: 12px 16px; }
+    img { display: block; max-width: 100%; }
+    h1, h2, h3, p { margin-top: 0; }
+    .shell { width: min(calc(100% - 56px), var(--max)); margin-inline: auto; }
+    .skip { position: absolute; left: 18px; top: -80px; z-index: 100; padding: 10px 14px; background: var(--white); }
     .skip:focus { top: 12px; }
-    header { position: sticky; top: 0; z-index: 30; background: rgba(21,23,26,.96); color: white; backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,.1); }
-    nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .mark { text-decoration: none; font: 800 18px/1 "Manrope", sans-serif; letter-spacing: -.035em; }
-    .mark span { color: var(--orange); }
-    .mark small { margin-left: 10px; color: #989ba2; font: 600 10px/1 "Manrope", sans-serif; letter-spacing: .16em; }
-    .navlinks { display: flex; align-items: center; gap: 22px; }
-    .navlinks a { color: #e8e6e1; text-decoration: none; font-size: 14px; font-weight: 700; }
-    .navlinks .nav-cta { color: var(--ink); background: var(--orange); border-radius: 999px; padding: 10px 17px; }
-    a:focus-visible, summary:focus-visible { outline: 3px solid #5277ff; outline-offset: 5px; }
-
-    .hero-stage { position: relative; overflow: hidden; background: #121417; color: #f8f6f1; }
-    .hero-stage:before { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px), linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px), radial-gradient(circle at 78% 28%,rgba(239,106,58,.2),transparent 34%); background-size: 88px 88px,88px 88px,auto; }
-    .hero-stage > * { position: relative; }
-    .hero { min-height: 690px; display: grid; grid-template-columns: minmax(0,1.25fr) minmax(310px,.75fr); align-items: center; gap: 78px; padding: 86px 0 68px; }
-    .eyebrow, .kicker { color: #d9b79e; font: 700 12px/1.3 "Manrope", sans-serif; letter-spacing: .16em; text-transform: uppercase; }
-    .eyebrow { display: flex; gap: 10px; align-items: center; }
-    .eyebrow:before { content: ""; width: 30px; height: 2px; background: var(--orange); }
-    h1, h2, h3 { font-family: "Manrope", sans-serif; }
-    h1 { margin: 24px 0 8px; font-size: clamp(64px,8.2vw,106px); line-height: .95; letter-spacing: -.07em; }
-    h1 em { color: var(--orange); font-style: normal; }
-    .hero-role { margin: 0 0 24px; font: 700 clamp(24px,3vw,37px)/1.18 "Manrope", sans-serif; letter-spacing: -.035em; }
-    .intro { max-width: 680px; margin: 0; color: #c8c9c9; font-size: 19px; line-height: 1.65; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 30px; }
-    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 20px; border: 1px solid #777a80; border-radius: 999px; color: white; text-decoration: none; font-size: 16px; font-weight: 700; }
-    .button.primary { background: var(--orange); border-color: var(--orange); color: var(--ink); }
-    .button:hover { background: var(--lime); border-color: var(--lime); color: var(--ink); }
-    .hero-visual { overflow: hidden; align-self: center; background: #23262a; border: 1px solid rgba(255,255,255,.16); border-radius: 18px; box-shadow: 0 30px 80px rgba(0,0,0,.34); }
-    .hero-visual img { display: block; width: 100%; height: auto; }
-    .hero-note { padding: 20px 22px; border-top: 1px solid rgba(255,255,255,.14); color: #aeb0b4; font-size: 15px; }
-    .hero-note strong { display: block; margin-bottom: 6px; color: white; font: 700 17px/1.3 "Manrope", sans-serif; }
-    .hero-location { display: inline-block; margin-bottom: 8px; color: var(--orange); font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
-    .proof-strip { display: grid; grid-template-columns: repeat(4,1fr); border-top: 1px solid var(--dark-line); border-bottom: 1px solid var(--dark-line); }
-    .proof { padding: 27px; border-right: 1px solid var(--dark-line); }
-    .proof:first-child { padding-left: 0; }
-    .proof:last-child { border-right: 0; }
-    .proof strong { display: block; color: white; font: 800 27px/1.2 "Manrope", sans-serif; letter-spacing: -.035em; }
-    .proof span { display: block; margin-top: 7px; color: #9fa2a7; font-size: 13px; line-height: 1.45; }
-
-    .section { padding: 100px 0; border-top: 1px solid var(--line); }
-    .section-head { display: grid; grid-template-columns: minmax(160px,.65fr) minmax(0,1.85fr); gap: 60px; margin-bottom: 48px; }
-    .section .kicker { color: #9e542f; }
-    h2 { margin: 0; color: #20242a; font-size: clamp(42px,5vw,64px); line-height: 1.06; letter-spacing: -.055em; }
-    .section-copy { max-width: 700px; margin: 20px 0 0; color: var(--muted); font-size: 18px; line-height: 1.7; }
-
-    .pillars { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
-    .pillar { min-height: 300px; padding: 30px; background: var(--panel); border: 1px solid var(--line); border-radius: 16px; display: flex; flex-direction: column; box-shadow: 0 12px 36px rgba(34,35,34,.045); }
-    .pillar:nth-child(2) { background: var(--gold); }
-    .pillar-label { color: #8a4a2d; font: 800 12px/1.3 "Manrope", sans-serif; letter-spacing: .13em; text-transform: uppercase; }
-    .pillar:nth-child(2) .pillar-label { color: #402d1d; }
-    .pillar h3 { margin: 44px 0 14px; font-size: 29px; line-height: 1.12; letter-spacing: -.04em; }
-    .pillar p { margin: 0; color: var(--muted); font-size: 16px; }
-    .pillar:nth-child(2) p { color: #392c22; }
-    .pillar small { margin-top: auto; padding-top: 28px; color: var(--muted); font-size: 13px; font-weight: 700; }
-    .pillar:nth-child(2) small { color: #392c22; }
-
-    .build-panel { padding: clamp(32px,5vw,62px); background: #17191d; color: #f8f6f1; border-radius: 20px; box-shadow: 0 28px 70px rgba(23,25,29,.16); }
-    .build-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 54px; align-items: center; }
-    .build-panel .kicker { color: var(--lime); }
-    .build-panel h2 { margin: 15px 0 20px; color: white; }
-    .build-panel p { color: #c7c8cb; }
-    .build-points { display: grid; gap: 14px; margin-top: 28px; }
-    .build-point { padding: 17px 0; border-top: 1px solid #44484e; }
-    .build-point strong { display: block; color: white; font-size: 16px; }
-    .build-point span { color: #aeb1b6; font-size: 15px; }
-    .stack { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 28px; }
-    .stack span { padding: 7px 10px; border: 1px solid #4b4f55; border-radius: 999px; color: #d6d7d9; font-size: 12px; font-weight: 700; }
-    .system-view { padding: 16px; background: #0e1012; border: 1px solid #3d4147; border-radius: 16px; box-shadow: 0 26px 60px rgba(0,0,0,.25); }
-    .system-bar { display: flex; align-items: center; justify-content: space-between; padding: 8px 7px 15px; color: #8f9399; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
-    .dots { display: flex; gap: 6px; }
-    .dots i { width: 8px; height: 8px; border-radius: 50%; background: #4f5359; }
-    .dots i:first-child { background: var(--orange); }
-    .system-card { margin-top: 10px; padding: 18px; background: #202329; border: 1px solid #3d4147; border-radius: 12px; }
-    .system-card small { color: var(--lime); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-    .system-card strong { display: block; margin: 8px 0 4px; color: white; font-size: 18px; }
-    .system-card p { margin: 0; color: #aeb1b6; font-size: 13px; line-height: 1.5; }
-    .system-card.primary-card { background: #2b2e33; border-color: #60656d; }
-    .system-card.primary-card strong { color: var(--lime); }
-    .system-flow { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    .system-arrow { display: grid; place-items: center; height: 28px; color: var(--orange); font-size: 21px; }
-    .sanitized { margin: 11px 4px 2px; color: #777b82; font-size: 11px; text-align: center; }
-
-    .insight-grid { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); gap: 54px; align-items: center; }
-    .insight-photo { margin: 0; }
-    .insight-photo img { display: block; width: 100%; border-radius: 16px; box-shadow: 0 20px 55px rgba(42,38,31,.15); }
-    .insight-photo figcaption { margin-top: 10px; color: var(--muted); font-size: 13px; }
-    .insight-copy h2 { margin: 15px 0 22px; }
-    .insight-copy > p { color: var(--muted); font-size: 18px; }
-    .insight-stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; margin-top: 30px; }
-    .insight-stat { padding: 20px 0; border-top: 2px solid var(--orange); }
-    .insight-stat strong { display: block; font: 800 35px/1.1 "Manrope", sans-serif; letter-spacing: -.045em; }
-    .insight-stat span { display: block; margin-top: 6px; color: var(--muted); font-size: 14px; }
-
-    .systems-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
-    .system-result { padding: 29px; background: var(--panel); border: 1px solid var(--line); border-radius: 15px; }
-    .system-result strong { display: block; color: #9e542f; font: 800 clamp(36px,4vw,53px)/1 "Manrope", sans-serif; letter-spacing: -.055em; }
-    .system-result h3 { margin: 17px 0 12px; font-size: 23px; line-height: 1.2; letter-spacing: -.03em; }
-    .system-result p { margin: 0; color: var(--muted); font-size: 15px; }
-    .archive-link { margin-top: 25px; }
-    .archive-link a { font-weight: 700; text-underline-offset: 5px; }
-
-    .case-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
-    .case { padding: 28px; background: var(--panel); border: 1px solid var(--line); border-radius: 15px; }
-    .case:first-child { background: #17191d; color: white; }
-    .case-label { color: #9e542f; font-size: 12px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; }
-    .case:first-child .case-label { color: var(--lime); }
-    .case h3 { margin: 34px 0 13px; font-size: 25px; line-height: 1.18; letter-spacing: -.035em; }
-    .case p { margin: 0; color: var(--muted); font-size: 15px; }
-    .case:first-child p { color: #bdc0c4; }
-    .case-result { margin-top: 24px!important; padding-top: 17px; border-top: 1px solid var(--line); color: var(--ink)!important; font-weight: 700; }
-    .case:first-child .case-result { border-color: #454950; color: white!important; }
-
-    .leadership-card { display: grid; grid-template-columns: .9fr 1.1fr; overflow: hidden; background: var(--gold); border-radius: 20px; box-shadow: 0 24px 64px rgba(74,56,34,.17); }
-    .leadership-copy { padding: clamp(34px,5vw,62px); }
-    .leadership-copy .kicker { color: #3b2b1f; }
-    .leadership-copy h2 { margin: 16px 0 22px; font-size: clamp(39px,4.7vw,58px); }
-    .leadership-copy p { margin: 0; font-size: 18px; }
-    .leadership-scope { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 28px; }
-    .leadership-scope div { padding-top: 15px; border-top: 1px solid rgba(40,31,22,.35); }
-    .leadership-scope strong { display: block; font: 800 28px/1.1 "Manrope", sans-serif; }
-    .leadership-scope span { font-size: 13px; }
-    .quote { display: flex; flex-direction: column; justify-content: space-between; padding: clamp(34px,5vw,62px); background: #17191d; color: white; }
-    .quote-mark { color: var(--lime); font: 700 70px/1 Georgia,serif; }
-    blockquote { margin: 15px 0 35px; font: 600 clamp(22px,2.4vw,31px)/1.5 "Manrope", sans-serif; letter-spacing: -.025em; }
-    .quote-person { display: grid; gap: 3px; padding-top: 20px; border-top: 1px solid #454950; }
-    .quote-person span { color: #aeb1b6; font-size: 13px; }
-
-    .about-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 64px; align-items: start; }
-    .about-grid h2 { margin: 15px 0 24px; }
-    .about-grid p { color: var(--muted); font-size: 18px; }
-    .personal-photo { margin: 0 0 20px; }
-    .personal-photo img { display: block; border-radius: 15px; }
-    .facts { padding: 5px 22px; background: var(--panel); border: 1px solid var(--line); border-radius: 14px; }
-    .fact { display: grid; grid-template-columns: 100px 1fr; gap: 18px; padding: 17px 0; border-bottom: 1px solid var(--line); }
-    .fact:last-child { border-bottom: 0; }
-    .fact small { color: var(--muted); font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-    .fact span { font-weight: 600; }
-
-    .closing { padding: 68px 0 52px; }
-    .closing-box { position: relative; overflow: hidden; padding: clamp(36px,7vw,82px); background: #17191d; color: white; border-radius: 20px; }
-    .closing-box:after { content: ""; position: absolute; right: -90px; top: -150px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle,rgba(239,106,58,.29),transparent 67%); }
-    .closing-box > * { position: relative; z-index: 1; }
-    .closing-box h2 { max-width: 880px; color: white; }
-    .closing-box p { max-width: 700px; margin: 24px 0 0; color: #c5c7ca; font-size: 19px; }
-    footer { display: flex; justify-content: space-between; gap: 18px; padding: 28px 0 42px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
-    .section[id] { scroll-margin-top: 76px; }
-
-    @media (max-width: 920px) {
-      .navlinks a:not(.nav-cta) { display: none; }
-      .hero { grid-template-columns: 1fr; gap: 42px; }
-      .hero-visual { max-width: 520px; }
-      .proof-strip { grid-template-columns: repeat(2,1fr); }
-      .proof:nth-child(2) { border-right: 0; }
-      .proof:nth-child(-n+2) { border-bottom: 1px solid var(--dark-line); }
-      .section-head, .build-grid, .insight-grid, .leadership-card, .about-grid { grid-template-columns: 1fr; gap: 30px; }
-      .pillars, .systems-grid, .case-grid { grid-template-columns: 1fr; }
-      .pillar { min-height: 250px; }
-      .quote blockquote { max-width: 720px; }
+    a:focus-visible { outline: 3px solid #5778e8; outline-offset: 5px; }
+    header { position: sticky; top: 0; z-index: 50; background: rgba(243, 240, 233, .92); border-bottom: 1px solid var(--line); backdrop-filter: blur(18px); }
+    nav { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .mark { text-decoration: none; font-size: 15px; font-weight: 700; letter-spacing: .08em; }
+    .mark span { color: var(--accent); }
+    .navlinks { display: flex; align-items: center; gap: 28px; }
+    .navlinks a { text-decoration: none; font-size: 13px; font-weight: 600; }
+    .navlinks a:not(.resume-link):hover { color: var(--accent-dark); }
+    .resume-link { padding: 9px 14px; border: 1px solid var(--ink); }
+    .resume-link:hover { background: var(--ink); color: var(--white); }
+    .hero { position: relative; min-height: 735px; overflow: hidden; background: #171816; color: var(--white); }
+    .hero-image { position: absolute; inset: 0 0 0 auto; width: min(71%, 1050px); height: 100%; object-fit: cover; object-position: center; opacity: .97; filter: contrast(1.04); }
+    .hero:after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #171816 0%, #171816 35%, rgba(23,24,22,.82) 49%, rgba(23,24,22,.08) 77%, rgba(23,24,22,.16) 100%), linear-gradient(0deg, rgba(23,24,22,.32), transparent 36%); }
+    .hero-content { position: relative; z-index: 2; min-height: 735px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding-block: 104px 82px; }
+    .overline { margin-bottom: 26px; color: #d8d3ca; font-size: 12px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    .overline:before { content: ""; display: inline-block; width: 38px; height: 1px; margin: 0 13px 4px 0; background: var(--accent); }
+    h1 { max-width: 760px; margin-bottom: 28px; font: 400 clamp(63px, 7.5vw, 112px)/.88 "Instrument Serif", serif; letter-spacing: -.035em; }
+    h1 em { color: #f47a53; font-weight: 400; }
+    .hero-intro { max-width: 565px; margin-bottom: 0; color: #dedbd4; font-size: clamp(18px, 1.65vw, 22px); line-height: 1.55; }
+    .hero-role { margin-top: 24px; color: #aaa9a4; font-size: 14px; font-weight: 600; letter-spacing: .02em; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 36px; }
+    .button { display: inline-flex; min-height: 47px; align-items: center; justify-content: center; padding: 11px 17px; border: 1px solid #777873; color: var(--white); text-decoration: none; font-size: 14px; font-weight: 700; }
+    .button.primary { background: var(--accent); border-color: var(--accent); color: #171816; }
+    .button:hover { background: var(--white); border-color: var(--white); color: var(--ink); }
+    .proof-line { background: var(--white); border-bottom: 1px solid var(--line); }
+    .proof-line .shell { min-height: 112px; display: grid; grid-template-columns: 1.3fr repeat(4, 1fr); align-items: center; }
+    .proof-title { padding-right: 32px; color: var(--muted); font: italic 25px/1.1 "Instrument Serif", serif; }
+    .proof-item { min-height: 112px; display: flex; flex-direction: column; justify-content: center; padding: 18px 24px; border-left: 1px solid var(--line); }
+    .proof-item strong { font: 400 31px/1 "Instrument Serif", serif; }
+    .proof-item span { margin-top: 7px; color: var(--muted); font-size: 12px; line-height: 1.35; }
+    .section { padding-block: 124px; }
+    .section.white { background: var(--white); }
+    .eyebrow { color: var(--accent-dark); font-size: 12px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    .eyebrow.light { color: #f18a69; }
+    h2 { margin-bottom: 0; font: 400 clamp(49px, 6.3vw, 88px)/.98 "Instrument Serif", serif; letter-spacing: -.03em; }
+    h3 { font-size: 26px; line-height: 1.17; letter-spacing: -.025em; }
+    .thesis { display: grid; grid-template-columns: .7fr 1.65fr; gap: 92px; align-items: start; }
+    .thesis h2 { max-width: 870px; }
+    .thesis-copy { max-width: 680px; margin: 35px 0 0 auto; }
+    .thesis-copy p { color: var(--muted); font-size: 19px; }
+    .disciplines { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 84px; border-top: 1px solid var(--ink); }
+    .discipline { min-height: 260px; padding: 26px 36px 0 0; border-right: 1px solid var(--line); }
+    .discipline + .discipline { padding-left: 36px; }
+    .discipline:last-child { border-right: 0; }
+    .discipline-number { color: var(--accent-dark); font: italic 22px/1 "Instrument Serif", serif; }
+    .discipline h3 { margin: 48px 0 13px; }
+    .discipline p { color: var(--muted); font-size: 15px; }
+    .case-hero { display: grid; grid-template-columns: .62fr 1.38fr; gap: 70px; align-items: end; margin-bottom: 72px; }
+    .case-hero h2 { max-width: 850px; }
+    .case-summary { max-width: 650px; margin: 28px 0 0; color: var(--muted); font-size: 19px; }
+    .case-meta { display: grid; grid-template-columns: repeat(3, 1fr); margin-bottom: 28px; border-block: 1px solid var(--line); }
+    .meta-item { padding: 20px 24px 20px 0; }
+    .meta-item + .meta-item { padding-left: 24px; border-left: 1px solid var(--line); }
+    .meta-item small { display: block; margin-bottom: 8px; color: var(--muted); font-size: 11px; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+    .meta-item strong { font-size: 15px; line-height: 1.4; }
+    .product-story { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); min-height: 600px; background: #20211f; color: var(--white); }
+    .product-narrative { padding: clamp(38px, 6vw, 84px); display: flex; flex-direction: column; justify-content: space-between; }
+    .product-narrative h3 { max-width: 490px; margin: 18px 0 24px; font: 400 clamp(39px, 4.5vw, 62px)/1.01 "Instrument Serif", serif; }
+    .product-narrative p { max-width: 530px; color: #c7c6c1; font-size: 17px; }
+    .product-footnote { color: #8f908b; font-size: 12px; }
+    .product-map { padding: clamp(36px, 5vw, 72px); background: var(--accent); color: var(--ink); display: flex; flex-direction: column; justify-content: center; }
+    .map-label { margin-bottom: 32px; font-size: 11px; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .route { display: grid; grid-template-columns: 1fr 36px 1fr 36px 1fr; align-items: center; }
+    .route-step { min-height: 180px; padding: 24px 18px; border-block: 1px solid rgba(23,24,22,.48); display: flex; flex-direction: column; justify-content: space-between; }
+    .route-step span { font: italic 20px/1 "Instrument Serif", serif; }
+    .route-step strong { font-size: 18px; line-height: 1.2; }
+    .route-arrow { text-align: center; font-size: 23px; }
+    .route-note { max-width: 560px; margin: 28px 0 0; font-size: 14px; line-height: 1.55; }
+    .photo-story { padding-block: 0; background: var(--white); }
+    .photo-frame { position: relative; }
+    .photo-frame img { width: 100%; max-height: 760px; object-fit: cover; }
+    .photo-caption { position: absolute; right: 0; bottom: 0; width: min(430px, 43%); padding: 26px 30px; background: var(--white); }
+    .photo-caption strong { display: block; margin-bottom: 6px; font: 400 29px/1.1 "Instrument Serif", serif; }
+    .photo-caption span { color: var(--muted); font-size: 13px; }
+    .customer-copy { display: grid; grid-template-columns: .65fr 1.35fr; gap: 72px; padding-block: 100px 124px; }
+    .customer-copy h2 { max-width: 820px; }
+    .customer-body { max-width: 690px; margin-top: 32px; color: var(--muted); font-size: 18px; }
+    .customer-outcomes { display: grid; grid-template-columns: 1fr 1.4fr; gap: 34px; margin-top: 44px; padding-top: 24px; border-top: 1px solid var(--ink); }
+    .customer-outcomes strong { display: block; font: 400 52px/1 "Instrument Serif", serif; }
+    .customer-outcomes span { display: block; margin-top: 8px; color: var(--muted); font-size: 13px; }
+    .systems { background: var(--ink); color: var(--white); }
+    .systems-head { display: grid; grid-template-columns: .65fr 1.35fr; gap: 72px; }
+    .systems-head h2 { max-width: 850px; }
+    .systems-intro { max-width: 680px; margin-top: 28px; color: #b8b7b1; font-size: 18px; }
+    .numbers { display: grid; grid-template-columns: 1.1fr .9fr; margin-top: 84px; border-block: 1px solid #454640; }
+    .number { min-height: 350px; padding: 42px 58px 42px 0; display: flex; flex-direction: column; justify-content: space-between; }
+    .number + .number { padding-left: 58px; border-left: 1px solid #454640; }
+    .number strong { color: #f07851; font: 400 clamp(82px, 12vw, 165px)/.76 "Instrument Serif", serif; letter-spacing: -.04em; }
+    .number h3 { margin: 35px 0 8px; color: var(--white); }
+    .number p { max-width: 470px; margin-bottom: 0; color: #a9aaa4; font-size: 15px; }
+    .systems-lower { display: grid; grid-template-columns: 1fr 1fr; gap: 62px; padding-top: 64px; }
+    .systems-lower p { color: #b8b7b1; }
+    .systems-lower a { color: var(--white); font-weight: 700; text-underline-offset: 5px; }
+    .work-head { display: grid; grid-template-columns: .65fr 1.35fr; gap: 72px; margin-bottom: 72px; }
+    .work-list { border-top: 1px solid var(--ink); }
+    .work-row { display: grid; grid-template-columns: .13fr .57fr 1fr .48fr; gap: 34px; padding: 34px 0; border-bottom: 1px solid var(--line); align-items: start; }
+    .work-index { color: var(--accent-dark); font: italic 19px/1 "Instrument Serif", serif; }
+    .work-row h3 { margin-bottom: 0; }
+    .work-row p { margin-bottom: 0; color: var(--muted); font-size: 15px; }
+    .work-result { color: var(--ink)!important; font-weight: 700; }
+    .leadership { padding-block: 0; background: var(--white); }
+    .leadership-image { position: relative; min-height: 620px; }
+    .leadership-image img { width: 100%; height: 620px; object-fit: cover; }
+    .quote-panel { position: absolute; left: 0; bottom: 0; width: min(690px, 58%); padding: clamp(38px, 5vw, 70px); background: var(--sage); }
+    blockquote { margin: 14px 0 38px; font: 400 clamp(30px, 3.5vw, 48px)/1.12 "Instrument Serif", serif; letter-spacing: -.02em; }
+    .quote-person { padding-top: 16px; border-top: 1px solid rgba(23,24,22,.32); font-size: 13px; }
+    .quote-person strong { display: block; }
+    .about { display: grid; grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr); gap: clamp(54px, 8vw, 120px); align-items: center; }
+    .about figure { margin: 0; }
+    .about figure img { width: 100%; max-height: 720px; object-fit: cover; object-position: center 28%; }
+    .about-copy h2 { max-width: 780px; margin: 16px 0 36px; }
+    .about-copy > p { max-width: 700px; color: var(--muted); font-size: 18px; }
+    .about-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 44px; padding-top: 23px; border-top: 1px solid var(--ink); }
+    .about-facts small { display: block; margin-bottom: 7px; color: var(--muted); font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .about-facts span { font-size: 13px; font-weight: 600; line-height: 1.4; }
+    .closing { background: var(--accent); }
+    .closing-grid { display: grid; grid-template-columns: .7fr 1.3fr; gap: 72px; align-items: start; }
+    .closing h2 { max-width: 850px; }
+    .closing-copy { max-width: 690px; margin: 32px 0 0; font-size: 19px; }
+    .closing .button { border-color: rgba(23,24,22,.55); color: var(--ink); }
+    .closing .button.primary { background: var(--ink); border-color: var(--ink); color: var(--white); }
+    .closing .button:hover { background: var(--white); border-color: var(--white); color: var(--ink); }
+    footer { background: var(--ink); color: #adada7; }
+    footer .shell { min-height: 96px; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 12px; }
+    footer a { color: var(--white); text-underline-offset: 4px; }
+    .section[id] { scroll-margin-top: 72px; }
+    @media (max-width: 980px) {
+      .hero-image { width: 82%; object-position: 58% center; opacity: .8; }
+      .hero:after { background: linear-gradient(90deg, #171816 0%, rgba(23,24,22,.96) 38%, rgba(23,24,22,.35) 78%, rgba(23,24,22,.3) 100%), linear-gradient(0deg, rgba(23,24,22,.45), transparent 44%); }
+      .hero-content { justify-content: flex-end; }
+      .proof-line .shell { grid-template-columns: repeat(4, 1fr); }
+      .proof-title { display: none; }
+      .thesis, .case-hero, .customer-copy, .systems-head, .work-head, .closing-grid { grid-template-columns: 1fr; gap: 26px; }
+      .thesis-copy { margin-left: 0; }
+      .product-story { grid-template-columns: 1fr; }
+      .product-narrative { min-height: 480px; }
+      .work-row { grid-template-columns: .12fr .65fr 1.23fr; }
+      .work-result { grid-column: 2 / -1; }
+      .leadership-image, .leadership-image img { min-height: 670px; height: 670px; }
+      .quote-panel { width: min(720px, 82%); }
     }
-    @media (max-width: 620px) {
-      .shell { width: min(calc(100% - 28px), var(--max)); }
-      nav { min-height: 68px; }
-      .mark small { display: none; }
-      .navlinks { gap: 10px; }
-      .hero { min-height: auto; padding: 60px 0 46px; }
-      h1 { font-size: clamp(56px,18vw,80px); }
-      .hero-role { font-size: 23px; }
-      .proof-strip { grid-template-columns: 1fr; }
-      .proof, .proof:first-child { padding: 19px 0; border-right: 0; border-bottom: 1px solid var(--dark-line); }
-      .section { padding: 70px 0; }
-      .section-head { gap: 16px; margin-bottom: 34px; }
-      h2 { font-size: 39px; }
-      .system-flow, .insight-stats, .leadership-scope { grid-template-columns: 1fr; }
-      .build-panel, .pillar, .case, .system-result { padding: 24px; }
-      .system-view { padding: 12px; }
-      .fact { grid-template-columns: 80px 1fr; }
-      footer { flex-direction: column; }
+    @media (max-width: 700px) {
+      .shell { width: min(calc(100% - 30px), var(--max)); }
+      nav { min-height: 64px; }
+      .navlinks a:not(.resume-link) { display: none; }
+      .hero, .hero-content { min-height: 690px; }
+      .hero-image { inset: 0; width: 100%; height: 50%; object-position: center 26%; }
+      .hero:after { background: linear-gradient(0deg, #171816 0%, #171816 48%, rgba(23,24,22,.28) 72%, rgba(23,24,22,.08) 100%); }
+      .hero-content { justify-content: flex-end; padding-block: 280px 48px; }
+      h1 { font-size: clamp(54px, 16vw, 79px); }
+      .hero-intro { font-size: 17px; }
+      .hero-role { font-size: 12px; }
+      .proof-line .shell { grid-template-columns: 1fr 1fr; }
+      .proof-item { min-height: 94px; padding: 15px 12px; }
+      .proof-item:nth-child(odd) { border-left: 0; }
+      .proof-item:nth-child(-n+3) { border-bottom: 1px solid var(--line); }
+      .section { padding-block: 82px; }
+      h2 { font-size: clamp(45px, 14vw, 63px); }
+      .disciplines { grid-template-columns: 1fr; margin-top: 55px; }
+      .discipline, .discipline + .discipline { min-height: auto; padding: 24px 0 30px; border-right: 0; border-bottom: 1px solid var(--line); }
+      .discipline h3 { margin-top: 28px; }
+      .case-meta { grid-template-columns: 1fr; }
+      .meta-item, .meta-item + .meta-item { padding: 16px 0; border-left: 0; border-bottom: 1px solid var(--line); }
+      .meta-item:last-child { border-bottom: 0; }
+      .product-narrative { min-height: 500px; }
+      .route { grid-template-columns: 1fr; }
+      .route-arrow { padding: 8px; transform: rotate(90deg); }
+      .route-step { min-height: 120px; }
+      .photo-caption { position: static; width: 100%; padding-inline: 0; }
+      .customer-copy { padding-block: 72px 86px; }
+      .customer-outcomes, .numbers, .systems-lower { grid-template-columns: 1fr; }
+      .number, .number + .number { min-height: 270px; padding: 38px 0; border-left: 0; border-bottom: 1px solid #454640; }
+      .number strong { font-size: clamp(88px, 29vw, 135px); }
+      .work-row { grid-template-columns: 34px 1fr; gap: 20px 14px; }
+      .work-row > p, .work-result { grid-column: 2; }
+      .leadership-image, .leadership-image img { min-height: 740px; height: 740px; }
+      .leadership-image img { object-position: 58% center; }
+      .quote-panel { width: 100%; }
+      .about { grid-template-columns: 1fr; }
+      .about figure img { max-height: 540px; object-position: center 26%; }
+      .about-facts { grid-template-columns: 1fr; }
+      footer .shell { padding-block: 24px; flex-direction: column; align-items: flex-start; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
@@ -231,235 +237,69 @@
   <a class="skip" href="#main">Skip to content</a>
   <header>
     <nav class="shell" aria-label="Primary navigation">
-      <a class="mark" href="#top">JC<span>.</span>NAVARRO <small>CUSTOMER + AI INNOVATION</small></a>
+      <a class="mark" href="#top">JC<span>.</span>NAVARRO</a>
       <div class="navlinks">
-        <a href="#builds">Builds</a>
-        <a href="#customer">Customer insight</a>
+        <a href="#work">Work</a>
+        <a href="#insight">Customer insight</a>
         <a href="#leadership">Leadership</a>
         <a href="#about">About</a>
-        <a class="nav-cta" href="JC_Navarro_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="resume-link" href="JC_Navarro_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
       </div>
     </nav>
   </header>
-
   <main id="main">
-    <div id="top"></div>
-    <div class="hero-stage">
-      <section class="hero shell">
-        <div>
-          <div class="eyebrow">Customer marketing · AI innovation · Product building</div>
-          <h1>JC <em>Navarro</em></h1>
-          <p class="hero-role">Senior Manager, Customer Marketing | Integrated Marketing</p>
-          <p class="intro">I turn customer insight into programs, product concepts, internal tools, and operating systems. My edge is connecting the human problem to a useful working solution—then helping teams adopt and scale it.</p>
-          <div class="hero-actions">
-            <a class="button primary" href="#builds">See what I build</a>
-            <a class="button" href="JC_Navarro_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <img src="assets/jc-navarro-headshot.webp" alt="JC Navarro smiling, wearing glasses and a black shirt" width="1254" height="1254" fetchpriority="high">
-          <aside class="hero-note">
-            <span class="hero-location">San Diego, California</span>
-            <strong>Customer marketer. Product-minded builder. Creative operator.</strong>
-            Customer empathy, analytical rigor, hands-on execution, and people leadership in one operating style.
-          </aside>
-        </div>
-      </section>
-      <div class="proof-strip shell" aria-label="Selected impact">
-        <div class="proof"><strong>180+ companies</strong><span>Customer-company baseline established for a Pro-facing Community Hub.</span></div>
-        <div class="proof"><strong>Security reviewed</strong><span>Internal application built and launched with AI-assisted development.</span></div>
-        <div class="proof"><strong>1,600+ requests</strong><span>Creative operating system spanning intake through delivery.</span></div>
-        <div class="proof"><strong>300+ assets</strong><span>Delivered by the team in a single quarter.</span></div>
-      </div>
-    </div>
-
-    <section class="section shell" aria-labelledby="value-heading">
-      <div class="section-head">
-        <div class="kicker">The throughline</div>
-        <div>
-          <h2 id="value-heading">Listen closely.<br>Build what helps.</h2>
-          <p class="section-copy">My career looks broad because the problems have been broad. The consistent pattern is discovering what people need, translating ambiguity into a clear system, and leading the work from idea to adoption.</p>
-        </div>
-      </div>
-      <div class="pillars">
-        <article class="pillar">
-          <span class="pillar-label">Customer insight</span>
-          <h3>Find the signal behind the request.</h3>
-          <p>I interview customers, study behavior and feedback, and connect recurring needs to programs, content, and product opportunities.</p>
-          <small>Community · Voice of Customer · Advocacy</small>
-        </article>
-        <article class="pillar">
-          <span class="pillar-label">Product building</span>
-          <h3>Turn the insight into something usable.</h3>
-          <p>I use AI-assisted development to prototype and ship tools, workflows, and experiences—with tests, security review, and responsible handoffs.</p>
-          <small>AI-assisted development · Prototyping · Governance</small>
-        </article>
-        <article class="pillar">
-          <span class="pillar-label">Operating systems</span>
-          <h3>Make the solution repeatable.</h3>
-          <p>I design intake, analytics, content operations, decision habits, and team structures that help good work keep moving without depending on one person.</p>
-          <small>Marketing operations · Leadership · Scale</small>
-        </article>
+    <section class="hero" id="top">
+      <img class="hero-image" src="assets/jc-navarro-portrait.webp" alt="JC Navarro in a black sweater against a dark studio background" width="1344" height="575" fetchpriority="high">
+      <div class="hero-content shell">
+        <div class="overline">Customer marketing · AI innovation</div>
+        <h1>I turn customer insight into <em>things teams can use.</em></h1>
+        <p class="hero-intro">Programs. Product concepts. Internal tools. Operating systems. I connect the human problem to a working solution—and help people adopt and scale it.</p>
+        <p class="hero-role">JC Navarro · Senior Manager, Customer Marketing | Integrated Marketing</p>
+        <div class="hero-actions"><a class="button primary" href="#work">Explore the work</a><a class="button" href="JC_Navarro_Resume.pdf" target="_blank" rel="noopener">Download résumé</a></div>
       </div>
     </section>
-
-    <section class="section shell" id="builds">
-      <div class="build-panel">
-        <div class="build-grid">
-          <div>
-            <div class="kicker">Featured build · Pro Connect</div>
-            <h2>A customer relationship problem became a working internal product.</h2>
-            <p>Customer participation requests were spread across teams and pathways, creating the risk of duplicated outreach and relationship fatigue. I designed and built a coordinated routing experience with shared contact cooldowns.</p>
-            <div class="build-points">
-              <div class="build-point"><strong>Built personally with AI assistance</strong><span>From problem framing and prototype through tests, documentation, and release.</span></div>
-              <div class="build-point"><strong>Reviewed across technical partners</strong><span>Worked with Engineering, Data, and IT on authentication, data access, security, and tradeoffs.</span></div>
-              <div class="build-point"><strong>Designed around customer trust</strong><span>Shared cooldowns help teams coordinate participation requests without over-contacting customers.</span></div>
-            </div>
-            <div class="stack" aria-label="Technology used"><span>Next.js</span><span>React</span><span>Supabase</span><span>n8n</span><span>Snowflake integration</span><span>Threat modeling</span></div>
-          </div>
-          <div class="system-view" role="img" aria-label="Sanitized conceptual view of Pro Connect routing requests through shared customer relationship safeguards">
-            <div class="system-bar"><span class="dots"><i></i><i></i><i></i></span><span>Sanitized system view</span></div>
-            <div class="system-card primary-card">
-              <small>Request router</small>
-              <strong>What do you need from a customer?</strong>
-              <p>Choose a program pathway, audience, timing, and participation requirement.</p>
-            </div>
-            <div class="system-arrow" aria-hidden="true">↓</div>
-            <div class="system-flow">
-              <div class="system-card"><small>Relationship protection</small><strong>Shared cooldown</strong><p>Coordinate across teams before another customer contact.</p></div>
-              <div class="system-card"><small>Research sourcing</small><strong>Qualified matches</strong><p>Find appropriate customers through an IT-reviewed data path.</p></div>
-            </div>
-            <div class="system-card">
-              <small>Clear handoff</small>
-              <strong>Route the request to the right owner</strong>
-              <p>Keep responsibilities visible while preserving human judgment and approval.</p>
-            </div>
-            <div class="sanitized">Conceptual recreation using sample language—no customer or internal data shown.</div>
-          </div>
-        </div>
+    <div class="proof-line" aria-label="Selected impact"><div class="shell">
+      <div class="proof-title">Evidence, not adjectives.</div>
+      <div class="proof-item"><strong>180+</strong><span>customer companies in a Community Hub baseline</span></div>
+      <div class="proof-item"><strong>1,600+</strong><span>creative requests made visible in one system</span></div>
+      <div class="proof-item"><strong>90%+</strong><span>adoption of AI-guided creative briefs</span></div>
+      <div class="proof-item"><strong>9</strong><span>people led during an Interim Creative Director assignment</span></div>
+    </div></div>
+    <section class="section shell">
+      <div class="thesis"><div class="eyebrow">The throughline</div><div><h2>The work lives where people, product, and possibility meet.</h2><div class="thesis-copy"><p>My career looks broad because the problems have been broad. The consistent pattern is listening closely, translating ambiguity into something clear, and leading the work from idea to adoption.</p></div></div></div>
+      <div class="disciplines">
+        <article class="discipline"><div class="discipline-number">01</div><h3>Find the signal.</h3><p>Interview customers, study behavior and feedback, and connect recurring needs to programs, content, and product opportunities.</p></article>
+        <article class="discipline"><div class="discipline-number">02</div><h3>Build what helps.</h3><p>Use AI-assisted development to prototype and ship tools, workflows, and experiences—with tests, security review, and responsible handoffs.</p></article>
+        <article class="discipline"><div class="discipline-number">03</div><h3>Make it repeatable.</h3><p>Design the operating systems, decision habits, and team structures that let useful work scale beyond one person.</p></article>
       </div>
     </section>
-
-    <section class="section shell" id="customer">
-      <div class="insight-grid">
-        <figure class="insight-photo">
-          <img src="assets/jc-production-enhanced.webp" alt="JC conducting a customer interview on a film set" width="1672" height="940" loading="lazy">
-          <figcaption>Customer insight begins with real conversations, not assumptions.</figcaption>
-        </figure>
-        <div class="insight-copy">
-          <div class="kicker">Community and Voice of Customer</div>
-          <h2>Customer insight should change what gets built.</h2>
-          <p>I own and extend a customer-facing Community Hub, adding content operations, analytics, feedback loops, and recurring refresh workflows. I also interview Pros and translate recurring needs into product concepts and prototypes for research outreach, roadmap voting, and program discovery.</p>
-          <p>The goal is not simply to collect quotes. It is to make the customer voice useful to Marketing, Product, Customer Success, and the teams deciding what happens next.</p>
-          <div class="insight-stats">
-            <div class="insight-stat"><strong>180+</strong><span>Customer companies represented in the soft-launch baseline.</span></div>
-            <div class="insight-stat"><strong>Multi-team</strong><span>Partnership across Product, Engineering, Data, IT, Customer Success, Growth, and Brand.</span></div>
-          </div>
-        </div>
+    <section class="section white" id="work"><div class="shell">
+      <div class="case-hero"><div class="eyebrow">01 · Featured build</div><div><h2>Pro Connect</h2><p class="case-summary">A customer relationship problem became a working internal product.</p></div></div>
+      <div class="case-meta"><div class="meta-item"><small>The problem</small><strong>Fragmented participation requests and the risk of customer fatigue</strong></div><div class="meta-item"><small>My role</small><strong>Problem framing, product design, AI-assisted development, testing, and release</strong></div><div class="meta-item"><small>Partners</small><strong>Engineering, Data, IT, Product, Customer Success, and Marketing</strong></div></div>
+      <div class="product-story"><div class="product-narrative"><div><div class="eyebrow light">From coordination gap to product</div><h3>Protect the relationship while making participation easier.</h3><p>Customer requests were spread across teams and pathways. I designed and built a shared routing experience with coordinated contact cooldowns, clearer ownership, and an IT-reviewed data path.</p></div><div class="product-footnote">Built personally with AI assistance · Security reviewed · Documented for responsible handoff</div></div>
+      <div class="product-map" role="img" aria-label="Conceptual flow from a customer participation request through relationship safeguards to the right owner"><div class="map-label">The experience, simplified</div><div class="route"><div class="route-step"><span>Ask</span><strong>Define the customer need</strong></div><div class="route-arrow" aria-hidden="true">→</div><div class="route-step"><span>Protect</span><strong>Check shared contact cooldowns</strong></div><div class="route-arrow" aria-hidden="true">→</div><div class="route-step"><span>Route</span><strong>Move to the right owner</strong></div></div><p class="route-note">The product keeps responsibilities visible while preserving the human judgment required to protect customer trust.</p></div></div>
+    </div></section>
+    <section class="photo-story" id="insight">
+      <div class="photo-frame shell"><img src="assets/jc-production-enhanced.webp" alt="JC conducting a customer interview in a service professional's workshop" width="1672" height="940" loading="lazy"><div class="photo-caption"><strong>Start with the real conversation.</strong><span>Customer insight begins in context—not in a conference room.</span></div></div>
+      <div class="customer-copy shell"><div class="eyebrow">02 · Customer insight</div><div><h2>The customer voice should change what gets built.</h2><div class="customer-body"><p>I own and extend a customer-facing Community Hub, adding content operations, analytics, feedback loops, and recurring refresh workflows. I interview Pros and translate recurring needs into product concepts and prototypes for research outreach, roadmap voting, and program discovery.</p><p>The goal is not simply to collect quotes. It is to make the customer voice useful to Marketing, Product, Customer Success, and the teams deciding what happens next.</p></div><div class="customer-outcomes"><div><strong>180+</strong><span>Customer companies represented in the soft-launch baseline.</span></div><div><strong>Multi-team</strong><span>Partnership across Product, Engineering, Data, IT, Customer Success, Growth, and Brand.</span></div></div></div></div>
+    </section>
+    <section class="section systems" aria-labelledby="systems-title"><div class="shell">
+      <div class="systems-head"><div class="eyebrow light">03 · Operating systems</div><div><h2 id="systems-title">Scale the work without sanding off the craft.</h2><p class="systems-intro">Before moving into customer marketing, I built creative operations and led teams across paid acquisition, product launches, customer stories, events, and executive communications.</p></div></div>
+      <div class="numbers"><article class="number"><strong>1,600+</strong><div><h3>Requests made visible</h3><p>Centralized intake, prioritization, resourcing, review, and handoff in one creative operating system.</p></div></article><article class="number"><strong>300+</strong><div><h3>Assets in one quarter</h3><p>Delivered by the team without losing visibility into priorities, ownership, or the quality of the work.</p></div></article></div>
+      <div class="systems-lower"><p><strong>90%+ brief adoption.</strong> Tagged requests used an AI-guided brief generator that helped teams clarify the problem before production began.</p><p><strong>Leadership at scale.</strong> Led six designers and three videographers during an Interim Creative Director assignment, alongside contractors and cross-functional partners. <a href="creative-leadership.html">Explore the creative leadership archive</a>.</p></div>
+    </div></section>
+    <section class="section shell" aria-labelledby="evidence-title">
+      <div class="work-head"><div class="eyebrow">Selected evidence</div><h2 id="evidence-title">Creative judgment, measured and repeatable.</h2></div>
+      <div class="work-list">
+        <article class="work-row"><div class="work-index">01</div><h3>Performance creative</h3><p>Partnered with Performance Marketing on structured testing and evolved the work from voiceover-led scripts toward customer-led testimony.</p><p class="work-result">Average watch time +45% · CTR +8% · Spend −25% in a two-week team test.</p></article>
+        <article class="work-row"><div class="work-index">02</div><h3>Customer production</h3><p>Researched qualified plumbing, electrical, and HVAC customers, matched them to product needs, and concentrated filming within one region.</p><p class="work-result">Three customer shoots completed in one week, with all campaign videos delivered.</p></article>
+        <article class="work-row"><div class="work-index">03</div><h3>Transcript intelligence</h3><p>Designed an AI-assisted workflow that reviewed interview transcripts and surfaced relevant testimony with traceable timestamps.</p><p class="work-result">Relevant evidence surfaced in minutes instead of roughly 30 minutes of manual searching per interview.</p></article>
       </div>
     </section>
-
-    <section class="section shell" aria-labelledby="systems-heading">
-      <div class="section-head">
-        <div class="kicker">Systems at scale</div>
-        <div>
-          <h2 id="systems-heading">Build the system.<br>Grow the people.</h2>
-          <p class="section-copy">Before moving into customer marketing, I built creative operations and led teams across paid acquisition, product launches, customer stories, events, and executive communications.</p>
-        </div>
-      </div>
-      <div class="systems-grid">
-        <article class="system-result"><strong>1,600+</strong><h3>Requests made visible</h3><p>Centralized intake, prioritization, resourcing, review, and handoff in one creative operating system.</p></article>
-        <article class="system-result"><strong>90%+</strong><h3>AI-guided briefs adopted</h3><p>Tagged requests using an AI brief generator that helped teams clarify the problem before production began.</p></article>
-        <article class="system-result"><strong>9 people</strong><h3>Creative team led</h3><p>Six designers and three videographers led during an Interim Creative Director assignment, alongside contractor management.</p></article>
-      </div>
-      <p class="archive-link"><a href="creative-leadership.html">View the creative leadership archive</a></p>
-    </section>
-
-    <section class="section shell" aria-labelledby="cases-heading">
-      <div class="section-head">
-        <div class="kicker">Selected evidence</div>
-        <div>
-          <h2 id="cases-heading">Creative judgment,<br>measured and repeatable.</h2>
-          <p class="section-copy">The creative foundation still matters. It taught me how to make insight tangible, test the work, and build systems that help teams deliver.</p>
-        </div>
-      </div>
-      <div class="case-grid">
-        <article class="case">
-          <div class="case-label">Performance partnership</div>
-          <h3>Test the story, not just the format.</h3>
-          <p>Partnered with Performance Marketing on structured creative testing and evolved work from voiceover-led scripts toward customer-led testimony.</p>
-          <p class="case-result">A two-week team test improved average watch time about 45% and click-through rate about 8% while spend declined about 25%.</p>
-        </article>
-        <article class="case">
-          <div class="case-label">Customer research and delivery</div>
-          <h3>Three industries. Five features. One production week.</h3>
-          <p>Researched qualified plumbing, electrical, and HVAC customers, matched them to product needs, and concentrated filming within one region.</p>
-          <p class="case-result">Three customer shoots completed in one week, with all campaign videos delivered.</p>
-        </article>
-        <article class="case">
-          <div class="case-label">AI-assisted content operations</div>
-          <h3>Find the customer evidence already in the footage.</h3>
-          <p>Designed a workflow that reviewed interview transcripts and surfaced relevant testimony with traceable timestamps.</p>
-          <p class="case-result">Relevant material surfaced in minutes instead of roughly 30 minutes of manual searching per interview.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section shell" id="leadership">
-      <div class="leadership-card">
-        <div class="leadership-copy">
-          <div class="kicker">Leadership in practice</div>
-          <h2>Clarity creates room for ownership.</h2>
-          <p>I lead by turning ambiguity into a problem people can solve together. That means clearer briefs, better questions, visible decisions, honest feedback, and enough context for people to own the work.</p>
-          <div class="leadership-scope">
-            <div><strong>5 hires</strong><span>Two designers and three videographer/editors.</span></div>
-            <div><strong>3 editors</strong><span>Led directly alongside freelancers and partners.</span></div>
-          </div>
-        </div>
-        <div class="quote">
-          <div>
-            <div class="quote-mark" aria-hidden="true">“</div>
-            <blockquote>JC sat at the intersection of creative and performance, and he made both better. He turns messy, ambiguous asks into clear problem statements and a plan everyone can execute against.</blockquote>
-          </div>
-          <div class="quote-person"><strong>Christopher Root</strong><span>Senior Performance Marketing Manager · Housecall Pro</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section shell" id="about">
-      <div class="about-grid">
-        <div>
-          <div class="kicker">About JC</div>
-          <h2>Both sides of the brain are part of the job.</h2>
-          <p>My career has moved through government technology, ministry, entrepreneurship, creative leadership, operations, customer marketing, and AI-assisted product building. The titles changed. The throughline did not: listen closely, make complex ideas clear, and build something that helps people move forward.</p>
-          <p>I am at my best when a problem needs customer empathy and analysis, creative direction and systems thinking, leadership and hands-on building. That range is not a collection of unrelated skills. It is how I solve problems end to end.</p>
-          <p>Outside work, I coach youth basketball, spend time with my wife and three kids, and serve in my local community.</p>
-        </div>
-        <div>
-          <figure class="personal-photo"><img src="assets/jc-navarro-conversation.webp" alt="JC sharing a laugh during a podcast conversation" width="2500" height="1406" loading="lazy"></figure>
-          <div class="facts">
-            <div class="fact"><small>Current</small><span>Senior Manager, Customer Marketing<br>Integrated Marketing at Housecall Pro</span></div>
-            <div class="fact"><small>Strength</small><span>Customer insight → working solution → scalable system</span></div>
-            <div class="fact"><small>Based</small><span>San Diego, California</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="closing shell" id="contact">
-      <div class="closing-box">
-        <div class="kicker">The next chapter</div>
-        <h2>Build what customers need—and what teams can actually use.</h2>
-        <p>I’m interested in customer-led marketing innovation, AI transformation, marketing technology, and integrated leadership roles where insight, product thinking, systems, and people all matter.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:julius.c.navarro@gmail.com">Email JC</a>
-          <a class="button" href="https://www.linkedin.com/in/navarrojc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a class="button" href="JC_Navarro_Resume.pdf" download>Download resume</a>
-        </div>
-      </div>
-    </section>
+    <section class="leadership" id="leadership"><div class="leadership-image shell"><img src="assets/jc-navarro-conversation.webp" alt="JC sharing a laugh during a recorded conversation" width="2500" height="1406" loading="lazy"><div class="quote-panel"><div class="eyebrow">Leadership in practice</div><blockquote>“JC sat at the intersection of creative and performance, and he made both better. He turns messy, ambiguous asks into clear problem statements and a plan everyone can execute against.”</blockquote><div class="quote-person"><strong>Christopher Root</strong><span>Senior Performance Marketing Manager · Housecall Pro</span></div></div></div></section>
+    <section class="section shell" id="about"><div class="about"><figure><img src="assets/jc-coaching.webp" alt="JC coaching a youth basketball team during a game" width="1119" height="1492" loading="lazy"></figure><div class="about-copy"><div class="eyebrow">About JC</div><h2>Both sides of the brain are part of the job.</h2><p>My career has moved through government technology, ministry, entrepreneurship, creative leadership, operations, customer marketing, and AI-assisted product building. The titles changed. The throughline did not: listen closely, make complex ideas clear, and build something that helps people move forward.</p><p>I am at my best when a problem needs customer empathy and analysis, creative direction and systems thinking, leadership and hands-on building. That range is not a collection of unrelated skills. It is how I solve problems end to end.</p><p>Outside work, I coach youth basketball, spend time with my wife and three kids, and serve in my local community.</p><div class="about-facts"><div><small>Current</small><span>Senior Manager, Customer Marketing · Integrated Marketing</span></div><div><small>Strength</small><span>Insight → working solution → scalable system</span></div><div><small>Based</small><span>San Diego, California</span></div></div></div></div></section>
+    <section class="section closing" id="contact"><div class="closing-grid shell"><div class="eyebrow">The next chapter</div><div><h2>Build what customers need—and what teams can actually use.</h2><p class="closing-copy">I’m interested in customer-led marketing innovation, AI transformation, marketing technology, and integrated leadership roles where insight, product thinking, systems, and people all matter.</p><div class="hero-actions"><a class="button primary" href="mailto:julius.c.navarro@gmail.com">Email JC</a><a class="button" href="https://www.linkedin.com/in/navarrojc/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="button" href="JC_Navarro_Resume.pdf" download>Download résumé</a></div></div></div></section>
   </main>
-
-  <footer class="shell"><span>© 2026 JC Navarro · San Diego</span><span>Customer marketer. Product-minded builder. Creative operator.</span></footer>
+  <footer><div class="shell"><span>© 2026 JC Navarro · San Diego</span><span><a href="mailto:julius.c.navarro@gmail.com">julius.c.navarro@gmail.com</a></span></div></footer>
 </body>
 </html>
