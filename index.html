@@ -118,9 +118,9 @@
     .photo-story { padding-block: 0; background: var(--white); }
     .photo-frame { position: relative; }
     .photo-frame img { width: 100%; max-height: 760px; object-fit: cover; }
-    .photo-caption { position: absolute; right: 0; bottom: 0; width: min(430px, 43%); padding: 26px 30px; background: var(--white); }
-    .photo-caption strong { display: block; margin-bottom: 6px; font: 400 29px/1.1 "Instrument Serif", serif; }
-    .photo-caption span { color: var(--muted); font-size: 13px; }
+    .photo-caption { display: grid; grid-template-columns: minmax(260px, .75fr) minmax(300px, 1.25fr); gap: 36px; align-items: baseline; width: 100%; padding: 22px 0 24px; border-bottom: 1px solid var(--line); }
+    .photo-caption strong { font: 400 29px/1.1 "Instrument Serif", serif; }
+    .photo-caption span { color: var(--muted); font-size: 14px; }
     .customer-copy { display: grid; grid-template-columns: .65fr 1.35fr; gap: 72px; padding-block: 100px 124px; }
     .customer-copy h2 { max-width: 820px; }
     .customer-body { max-width: 690px; margin-top: 32px; color: var(--muted); font-size: 18px; }
@@ -215,7 +215,7 @@
       .route { grid-template-columns: 1fr; }
       .route-arrow { padding: 8px; transform: rotate(90deg); }
       .route-step { min-height: 120px; }
-      .photo-caption { position: static; width: 100%; padding-inline: 0; }
+      .photo-caption { grid-template-columns: 1fr; gap: 6px; padding: 18px 0 20px; }
       .customer-copy { padding-block: 72px 86px; }
       .customer-outcomes, .numbers, .systems-lower { grid-template-columns: 1fr; }
       .number, .number + .number { min-height: 270px; padding: 38px 0; border-left: 0; border-bottom: 1px solid #454640; }
