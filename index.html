@@ -148,11 +148,12 @@
     .work-row p { margin-bottom: 0; color: var(--muted); font-size: 15px; }
     .work-result { color: var(--ink)!important; font-weight: 700; }
     .leadership { padding-block: 0; background: var(--white); }
-    .leadership-image { position: relative; min-height: 620px; }
-    .leadership-image img { width: 100%; height: 620px; object-fit: cover; }
-    .quote-panel { position: absolute; left: 0; bottom: 0; width: min(690px, 58%); padding: clamp(38px, 5vw, 70px); background: var(--sage); }
-    blockquote { margin: 14px 0 38px; font: 400 clamp(30px, 3.5vw, 48px)/1.12 "Instrument Serif", serif; letter-spacing: -.02em; }
-    .quote-person { padding-top: 16px; border-top: 1px solid rgba(23,24,22,.32); font-size: 13px; }
+    .leadership-image { position: relative; }
+    .leadership-image img { width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; }
+    .quote-panel { display: grid; grid-template-columns: minmax(220px, .45fr) minmax(0, 1.55fr); gap: 28px 64px; align-items: start; width: 100%; padding: clamp(38px, 5vw, 70px); background: var(--sage); }
+    .quote-panel .eyebrow { grid-column: 1; grid-row: 1; }
+    blockquote { grid-column: 2; grid-row: 1 / span 2; margin: 0; font: 400 clamp(30px, 3.5vw, 48px)/1.12 "Instrument Serif", serif; letter-spacing: -.02em; }
+    .quote-person { grid-column: 1; grid-row: 2; align-self: end; padding-top: 16px; border-top: 1px solid rgba(23,24,22,.32); font-size: 13px; }
     .quote-person strong { display: block; }
     .about { display: grid; grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr); gap: clamp(54px, 8vw, 120px); align-items: center; }
     .about figure { margin: 0; }
@@ -185,8 +186,7 @@
       .product-narrative { min-height: 480px; }
       .work-row { grid-template-columns: .12fr .65fr 1.23fr; }
       .work-result { grid-column: 2 / -1; }
-      .leadership-image, .leadership-image img { min-height: 670px; height: 670px; }
-      .quote-panel { width: min(720px, 82%); }
+      .quote-panel { grid-template-columns: minmax(190px, .5fr) minmax(0, 1.5fr); gap: 28px 46px; }
     }
     @media (max-width: 700px) {
       .shell { width: min(calc(100% - 30px), var(--max)); }
@@ -222,9 +222,8 @@
       .number strong { font-size: clamp(88px, 29vw, 135px); }
       .work-row { grid-template-columns: 34px 1fr; gap: 20px 14px; }
       .work-row > p, .work-result { grid-column: 2; }
-      .leadership-image, .leadership-image img { min-height: 740px; height: 740px; }
-      .leadership-image img { object-position: 58% center; }
-      .quote-panel { width: 100%; }
+      .quote-panel { grid-template-columns: 1fr; gap: 22px; padding: 34px 24px 38px; }
+      .quote-panel .eyebrow, blockquote, .quote-person { grid-column: 1; grid-row: auto; }
       .about { grid-template-columns: 1fr; }
       .about figure img { max-height: 540px; object-position: center 26%; }
       .about-facts { grid-template-columns: 1fr; }
@@ -296,7 +295,7 @@
         <article class="work-row"><div class="work-index">03</div><h3>Transcript intelligence</h3><p>Designed an AI-assisted workflow that reviewed interview transcripts and surfaced relevant testimony with traceable timestamps.</p><p class="work-result">Relevant evidence surfaced in minutes instead of roughly 30 minutes of manual searching per interview.</p></article>
       </div>
     </section>
-    <section class="leadership" id="leadership"><div class="leadership-image shell"><img src="assets/jc-navarro-conversation.webp" alt="JC sharing a laugh during a recorded conversation" width="2500" height="1406" loading="lazy"><div class="quote-panel"><div class="eyebrow">Leadership in practice</div><blockquote>“JC sat at the intersection of creative and performance, and he made both better. He turns messy, ambiguous asks into clear problem statements and a plan everyone can execute against.”</blockquote><div class="quote-person"><strong>Christopher Root</strong><span>Senior Performance Marketing Manager · Housecall Pro</span></div></div></div></section>
+    <section class="leadership" id="leadership"><div class="leadership-image shell"><img src="assets/jc-navarro-conversation.webp" alt="JC Navarro and a guest sharing a laugh during a recorded conversation" width="2500" height="1406" loading="lazy"><div class="quote-panel"><div class="eyebrow">Leadership in practice</div><blockquote>“JC sat at the intersection of creative and performance, and he made both better. He turns messy, ambiguous asks into clear problem statements and a plan everyone can execute against.”</blockquote><div class="quote-person"><strong>Christopher Root</strong><span>Senior Performance Marketing Manager · Housecall Pro</span></div></div></div></section>
     <section class="section shell" id="about"><div class="about"><figure><img src="assets/jc-coaching.webp" alt="JC coaching a youth basketball team during a game" width="1119" height="1492" loading="lazy"></figure><div class="about-copy"><div class="eyebrow">About JC</div><h2>Both sides of the brain are part of the job.</h2><p>My career has moved through government technology, ministry, entrepreneurship, creative leadership, operations, customer marketing, and AI-assisted product building. The titles changed. The throughline did not: listen closely, make complex ideas clear, and build something that helps people move forward.</p><p>I am at my best when a problem needs customer empathy and analysis, creative direction and systems thinking, leadership and hands-on building. That range is not a collection of unrelated skills. It is how I solve problems end to end.</p><p>Outside work, I coach youth basketball, spend time with my wife and three kids, and serve in my local community.</p><div class="about-facts"><div><small>Current</small><span>Senior Manager, Customer Marketing · Integrated Marketing</span></div><div><small>Strength</small><span>Insight → working solution → scalable system</span></div><div><small>Based</small><span>San Diego, California</span></div></div></div></div></section>
     <section class="section closing" id="contact"><div class="closing-grid shell"><div class="eyebrow">The next chapter</div><div><h2>Build what customers need—and what teams can actually use.</h2><p class="closing-copy">I’m interested in customer-led marketing innovation, AI transformation, marketing technology, and integrated leadership roles where insight, product thinking, systems, and people all matter.</p><div class="hero-actions"><a class="button primary" href="mailto:julius.c.navarro@gmail.com">Email JC</a><a class="button" href="https://www.linkedin.com/in/navarrojc/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a class="button" href="JC_Navarro_Resume.pdf" download>Download résumé</a></div></div></div></section>
   </main>
