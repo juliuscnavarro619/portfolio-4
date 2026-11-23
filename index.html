@@ -219,7 +219,7 @@
     .life-card { margin: 0; }
     .life-card img { width: 100%; height: 500px; object-fit: cover; }
     .life-card-wide img { object-position: 68% center; }
-    .life-card figcaption { display: grid; grid-template-columns: 1fr; gap: 7px; padding: 17px 0 22px; border-bottom: 1px solid var(--line); }
+    .life-card figcaption { min-height: 116px; display: grid; grid-template-columns: 1fr; align-content: start; gap: 7px; padding: 17px 0 22px; border-bottom: 1px solid var(--line); }
     .life-card figcaption strong { font: 400 24px/1.08 "Instrument Serif", serif; }
     .life-card figcaption span { color: var(--muted); font-size: 14px; line-height: 1.5; }
     .closing { background: var(--accent); }
@@ -302,7 +302,7 @@
       .life-gallery { gap: 28px; }
       .life-card img { height: auto; aspect-ratio: 4 / 3; }
       .life-card-haircut img { aspect-ratio: 4 / 5; }
-      .life-card figcaption { grid-template-columns: 1fr; gap: 6px; }
+      .life-card figcaption { min-height: 0; grid-template-columns: 1fr; gap: 6px; }
       footer .shell { padding-block: 24px; flex-direction: column; align-items: flex-start; }
     }
     @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
