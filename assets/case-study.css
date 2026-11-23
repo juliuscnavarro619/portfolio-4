@@ -54,6 +54,7 @@ h3 { margin-bottom: 12px; font-size: 24px; line-height: 1.18; letter-spacing: -.
 .media-shell video, .media-shell iframe { width: 100%; aspect-ratio: 16 / 9; background: #0d1929; border: 0; }
 .media-caption { display: flex; justify-content: space-between; gap: 24px; padding-top: 16px; color: #b8b7b1; font-size: 13px; }
 .media-caption strong { color: var(--white); }
+.media-caption a { color: var(--white); text-underline-offset: 3px; }
 .decision-grid { display: grid; grid-template-columns: repeat(2, 1fr); border-top: 1px solid var(--ink); }
 .decision { min-height: 230px; padding: 28px 34px 32px 0; border-bottom: 1px solid var(--line); }
 .decision:nth-child(even) { padding-left: 34px; border-left: 1px solid var(--line); }
