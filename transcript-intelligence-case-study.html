@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How JC Navarro built an AI-assisted workflow that searched customer interview transcripts, preserved exact wording, and returned traceable evidence for human editors.">
+  <title>Transcript Intelligence case study — JC Navarro</title>
+  <link rel="canonical" href="https://jcnavarro.net/transcript-intelligence-case-study.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&amp;family=Source+Sans+3:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/case-study.css">
+  <link rel="icon" href="assets/favicon.ico">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://jcnavarro.net/transcript-intelligence-case-study.html">
+  <meta property="og:title" content="Transcript Intelligence case study — JC Navarro">
+  <meta property="og:description" content="An AI-assisted retrieval workflow that finds customer evidence and keeps every quote attached to its source.">
+  <meta property="og:image" content="https://jcnavarro.net/assets/og-transcript-intelligence.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Transcript Intelligence case study by JC Navarro">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Find the customer evidence already in the footage",
+    "description": "A case study in AI-assisted transcript retrieval, traceable evidence, and editor enablement.",
+    "author": {"@type": "Person", "name": "JC Navarro", "url": "https://jcnavarro.net/"},
+    "url": "https://jcnavarro.net/transcript-intelligence-case-study.html",
+    "image": "https://jcnavarro.net/assets/og-transcript-intelligence.png",
+    "about": ["Customer insight", "Information retrieval", "AI workflows", "Video production"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to case study</a>
+  <header><nav class="shell" aria-label="Case study navigation"><a class="mark" href="index.html#top">JC.NAVARRO</a><div class="navlinks"><a href="creative-operations-case-study.html">Creative Operations</a><a class="portfolio-link" href="index.html#work">All case studies</a></div></nav></header>
+  <main id="main">
+    <section class="case-hero wide-title">
+      <div class="case-hero-grid shell">
+        <div><div class="eyebrow light">Case study · Customer evidence &amp; AI workflow</div><h1>Find the customer evidence already in the footage.</h1><p class="lede">I built a workflow that searched interview transcripts for product-relevant testimony, preserved the customer’s exact wording, and returned a traceable evidence map for editors to verify and shape.</p></div>
+        <div class="hero-facts" aria-label="Case study facts">
+          <div class="hero-fact"><small>Input</small><span>VTT transcripts from long-form customer interviews</span></div>
+          <div class="hero-fact"><small>My role</small><span>Workflow design, retrieval logic, and production integration</span></div>
+          <div class="hero-fact"><small>Primary users</small><span>Video editors evaluating story feasibility</span></div>
+          <div class="hero-fact"><small>Output</small><span>Quotes, timestamps, feature references, and possible directions</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="shell">
+        <div class="section-head"><div class="eyebrow">The problem</div><h2>The proof existed. Finding it was the bottleneck.</h2></div>
+        <div class="story">
+          <div class="story-copy"><p>Editors needed customer interviews that could support three product features across a bundle campaign. The source archive covered roughly five companies in each of twelve industries, often in interviews lasting 45–60 minutes.</p><p>The real question was not only “Where is the quote?” It was “Do we have enough credible material to support this industry and story direction before an editor commits to the cut?”</p></div>
+          <div class="story-points">
+            <div class="story-point"><b>01</b><div><h3>Search for meaning</h3><p>The workflow looked for feature relevance and story feasibility—not only exact keyword matches.</p></div></div>
+            <div class="story-point"><b>02</b><div><h3>Preserve the customer’s words</h3><p>Instructions required verbatim language so a useful result did not become a rewritten testimonial.</p></div></div>
+            <div class="story-point"><b>03</b><div><h3>Keep the path back</h3><p>Every proposed quote retained a timestamp so the editor could verify the clip, context, and delivery.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="shell">
+        <div class="section-head"><div class="eyebrow">The workflow</div><h2>AI narrows the archive. Editors make the story.</h2></div>
+        <div class="diagram-grid"><figure class="wide"><img src="assets/transcript-intelligence-flow.svg" alt="Workflow from customer interview transcripts through AI-assisted retrieval to a traceable evidence map and human editor"><figcaption>Conceptual workflow using recreated labels. It does not expose customer transcripts or private interfaces.</figcaption></figure></div>
+      </div>
+    </section>
+
+    <section class="section white">
+      <div class="shell">
+        <div class="section-head"><div class="eyebrow">Design decisions</div><h2>Fast retrieval only matters if the evidence stays trustworthy.</h2></div>
+        <div class="decision-grid">
+          <article class="decision"><small>Verbatim by default</small><h3>Do not improve the customer’s sentence.</h3><p>The workflow was instructed to preserve exact wording rather than manufacture cleaner advocacy language.</p></article>
+          <article class="decision"><small>Traceable output</small><h3>Attach every result to time and source.</h3><p>Editors received timestamps and transcript context so each suggestion could be verified against the interview.</p></article>
+          <article class="decision"><small>Feasibility first</small><h3>Answer whether a story can work before cutting it.</h3><p>The report grouped testimony by feature and industry, making coverage gaps visible early.</p></article>
+          <article class="decision"><small>Human editorial control</small><h3>Keep context, ethics, and taste with the editor.</h3><p>The tool surfaced candidates. People decided whether the clip was accurate, fair, useful, and emotionally right.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark">
+      <div class="shell">
+        <div class="section-head"><div class="eyebrow light">From retrieval to production</div><h2>A useful result moved cleanly into the editor’s real workflow.</h2></div>
+        <div class="build-grid">
+          <article class="build-note"><small>Ingest</small><h3>Read the transcript set</h3><p>VTT files supplied the customer language and the timecodes needed for source verification.</p></article>
+          <article class="build-note"><small>Map</small><h3>Return a feasibility report</h3><p>Relevant quotes, feature references, industry fit, timestamps, and possible video directions were organized for review.</p></article>
+          <article class="build-note"><small>Assemble</small><h3>Connect to source footage</h3><p>Daydream helped editors move from the brief toward source clips; editors remained responsible for the final cut.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sage">
+      <div class="metric-band shell">
+        <div><div class="metric-number compact">~30m</div><div class="eyebrow">Manual search estimate per interview</div></div>
+        <div class="metric-copy"><h2>Relevant evidence surfaced in minutes.</h2><p>The workflow compressed the initial search for useful testimony and let editors evaluate the available material sooner.</p><div class="transparency"><strong>What the comparison means:</strong> roughly 30 minutes was the estimated manual transcript-search time for an individual interview. “Minutes” describes retrieval of relevant material. It is not a measured reduction in final editing time and is not multiplied across the full archive.</div></div>
+      </div>
+    </section>
+
+    <section class="section next">
+      <div class="next-grid shell"><div class="eyebrow">Keep exploring</div><div><h2>See the operating system that helped the broader creative team work at scale.</h2><div class="actions"><a class="button primary" href="creative-operations-case-study.html">Creative Operations case study</a><a class="button" href="index.html#work">All case studies</a></div></div></div>
+    </section>
+  </main>
+  <footer><div class="shell"><span>© 2026 JC Navarro · San Diego</span><span><a href="mailto:julius.c.navarro@gmail.com">julius.c.navarro@gmail.com</a></span></div></footer>
+</body>
+</html>

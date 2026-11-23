@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">Transcript intelligence workflow</title>
+  <desc id="desc">A workflow from interview transcripts through AI-assisted evidence retrieval to a traceable quote map and human editorial decision.</desc>
+  <rect width="1200" height="600" fill="#171816"/>
+  <text x="72" y="78" fill="#f18a69" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">FROM ARCHIVE TO EVIDENCE</text>
+  <text x="72" y="139" fill="#fbfaf7" font-family="Georgia, serif" font-size="46">Search the words. Keep the source attached.</text>
+  <g transform="translate(72 220)">
+    <g>
+      <rect width="240" height="250" rx="2" fill="#f3f0e9"/>
+      <text x="28" y="44" fill="#a43820" font-family="Arial, sans-serif" font-size="13" font-weight="700">INPUT</text>
+      <text x="28" y="104" fill="#171816" font-family="Georgia, serif" font-size="31">Interview VTTs</text>
+      <path d="M28 136h184M28 162h148M28 188h171" stroke="#aaa69d" stroke-width="3"/>
+      <text x="28" y="224" fill="#67665f" font-family="Arial, sans-serif" font-size="14">Customer language + timecodes</text>
+    </g>
+    <path d="M260 125h80" stroke="#e45c36" stroke-width="3"/>
+    <path d="m330 114 12 11-12 11" fill="none" stroke="#e45c36" stroke-width="3"/>
+    <g transform="translate(364)">
+      <rect width="240" height="250" rx="2" fill="#bac7b5"/>
+      <text x="28" y="44" fill="#171816" font-family="Arial, sans-serif" font-size="13" font-weight="700">RETRIEVAL</text>
+      <text x="28" y="104" fill="#171816" font-family="Georgia, serif" font-size="31">Feature search</text>
+      <text x="28" y="145" fill="#353731" font-family="Arial, sans-serif" font-size="15">• exact customer wording</text>
+      <text x="28" y="174" fill="#353731" font-family="Arial, sans-serif" font-size="15">• relevance by industry</text>
+      <text x="28" y="203" fill="#353731" font-family="Arial, sans-serif" font-size="15">• possible story direction</text>
+    </g>
+    <path d="M624 125h80" stroke="#e45c36" stroke-width="3"/>
+    <path d="m694 114 12 11-12 11" fill="none" stroke="#e45c36" stroke-width="3"/>
+    <g transform="translate(728)">
+      <rect width="240" height="250" rx="2" fill="#fbfaf7"/>
+      <text x="28" y="44" fill="#a43820" font-family="Arial, sans-serif" font-size="13" font-weight="700">TRACEABLE OUTPUT</text>
+      <text x="28" y="104" fill="#171816" font-family="Georgia, serif" font-size="31">Evidence map</text>
+      <text x="28" y="148" fill="#67665f" font-family="Arial, sans-serif" font-size="15">Quote + transcript</text>
+      <text x="28" y="176" fill="#67665f" font-family="Arial, sans-serif" font-size="15">Timestamp + feature</text>
+      <text x="28" y="204" fill="#67665f" font-family="Arial, sans-serif" font-size="15">Feasibility + direction</text>
+    </g>
+    <path d="M988 125h72" stroke="#e45c36" stroke-width="3"/>
+    <path d="m1050 114 12 11-12 11" fill="none" stroke="#e45c36" stroke-width="3"/>
+    <g transform="translate(1084 40)">
+      <circle cx="28" cy="85" r="28" fill="#e45c36"/>
+      <path d="m17 86 8 8 16-19" fill="none" stroke="#171816" stroke-width="5"/>
+      <text x="-12" y="142" fill="#fbfaf7" font-family="Arial, sans-serif" font-size="12" font-weight="700">HUMAN</text>
+      <text x="-14" y="160" fill="#b8b7b1" font-family="Arial, sans-serif" font-size="12">EDITOR</text>
+    </g>
+  </g>
+  <text x="72" y="542" fill="#b8b7b1" font-family="Arial, sans-serif" font-size="15">AI narrows the search. Editors verify the clip, context, meaning, and final story.</text>
+</svg>
